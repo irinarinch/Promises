@@ -12,11 +12,12 @@
         "sourceType": "module"
     },
     "rules": {
+      "no-console": "off",
       "no-restricted-syntax": [
         "error",
         "LabeledStatement",
         "WithStatement"
-      ]
+      ]      
     },
     "plugins": [
        "jest"

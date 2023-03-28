@@ -1,13 +1,7 @@
-import { GameSavingLoader } from './loader';
+import GameSavingLoader from './GameSavingLoader';
 
-const save = new GameSavingLoader;
-
-save.load().then(saving => {  
-  console.log(saving);
+GameSavingLoader.load().then((saving) => {
+  return saving;
 }, (error) => {
   console.log(error);
 });
-
-
-
-
